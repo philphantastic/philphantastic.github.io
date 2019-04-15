@@ -369,6 +369,7 @@ img {
 img.social-media-icon {
    margin: auto;
    width: 50%;
+   filter:drop-shadow(6px 8px 4px #444);
 }
 
 .social-media-link {
@@ -855,4 +856,5 @@ bug {
     white-space: nowrap;
     user-select: none;
     z-index: 2;
+    filter:drop-shadow(6px 8px 4px #444);
 }
