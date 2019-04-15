@@ -1,0 +1,33 @@
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Phil Phantastic
+tagline:          
+url:              https://www.philphantastic.com/
+paginate:         1
+baseurl:          /
+author:
+  name:           Phil Phantastic
+  url:            https://twitter.com/PhilPhantasticx
+  email:          
+twitter:          PhilPhantasticx
+description:      YouTube & DLive Streamer
+markdown:         kramdown
+kramdown:
+  input:          GFM
+  smart_quotes:   ["lsquo", "rsquo", "ldquo", "rdquo"]
+
+# Custom vars
+version:          1.0.0
+github:
+  repo:           https://github.com/philphantastic/philphantastic.github.io
+
+
+# Ruby gems
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+# GitHub Metadata
+github: [metadata]

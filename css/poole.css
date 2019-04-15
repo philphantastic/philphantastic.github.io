@@ -1,0 +1,858 @@
+/*
+ *                        ___
+ *                       /\_ \
+ *  _____     ___     ___\//\ \      __
+ * /\ '__`\  / __`\  / __`\\ \ \   /'__`\
+ * \ \ \_\ \/\ \_\ \/\ \_\ \\_\ \_/\  __/
+ *  \ \ ,__/\ \____/\ \____//\____\ \____\
+ *   \ \ \/  \/___/  \/___/ \/____/\/____/
+ *    \ \_\
+ *     \/_/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/poole.
+ */
+
+
+/*
+ * Contents
+ *
+ * Body resets
+ * Custom type
+ * Messages
+ * Container
+ * Masthead
+ * Navigation bar
+ * Posts and pages
+ * Pagination
+ * Blog post archival list
+ * Index page
+ * Twitter
+ * Disqus
+ * Text selection color
+ * Reverse layout
+ * Themes
+ * Embedded YouTube Videos
+ * Mailing list
+ */
+
+
+@media all {html {font-size: 23px;}}
+/*@media all and (max-width:1000px){html {font-size: 24px;}}*/
+@media all and (max-width:960px){html {font-size: 23px;}}
+@media all and (max-width:920px){html {font-size: 22px;}}
+@media all and (max-width:880px){html {font-size: 21px;}}
+@media all and (max-width:840px){html {font-size: 20px;}}
+@media all and (max-width:800px){html {font-size: 19px;}}
+@media all and (max-width:760px){html {font-size: 18px;}}
+
+@media all and (max-width:520px) {
+   html{ font-size: 18px;}
+}
+
+
+/*
+ * Body resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  /* -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; */
+  background-image: url("../background.jpg");
+  background-repeat: repeat;
+  background-size:350%;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+/*@media (min-width: 38em) {
+  html {
+    font-size: 20px;
+  }
+}*/
+
+body {
+  /*background: #fff url('../gridbg.gif');*/
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeLegibility;
+  -moz-font-feature-settings: 'kern=1';
+  -moz-font-feature-settings: 'kern' 1;
+  -webkit-font-feature-settings: 'kern' 1;
+  -o-font-feature-settings: 'kern' 1;
+  -ms-font-feature-settings: 'kern' 1;
+  font-feature-settings: 'kern' 1;
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga' 1;
+  -webkit-font-feature-settings: 'liga' 1;
+  -o-font-feature-settings: 'liga' 1;
+  -ms-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga' 1;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+/* No `:visited` state is required by default (browsers will use `a`) */
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all .1s ease-in-out;
+  -moz-transition: all .1s ease-in-out;
+  transition: all .1s ease-in-out;
+}
+a strong {
+  color: inherit;
+}
+/* `:focus` is linked to `:hover` for basic accessibility */
+a:hover,
+a:focus {
+  border-bottom: 1px solid #303030;
+}
+a.archive-title {
+  font-family: sans-serif;
+  -moz-font-feature-settings: 'liga=1', 'ss01=0';
+  -moz-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -webkit-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -o-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -ms-font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-feature-settings: 'liga' 1, 'ss01' 1;
+  border-bottom: none;
+  hyphens:none;
+}
+
+a.archive-title:hover {
+  background: rgba(253, 233, 202, 0.3);
+  -moz-transition-property: background;
+  -webkit-transition-property: background;
+  transition-property: background;
+  -moz-transition-duration: 0s;
+  -webkit-transition-duration: 0s;
+  transition-duration: 0s;
+  border-radius: 8px;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  -moz-font-feature-settings: 'liga=1', 'ss01=0';
+  -moz-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -webkit-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -o-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -ms-font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.3rem; 
+  line-height: 1.2; 
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 1.05rem; 
+  line-height: 1.2em; 
+  margin-top: 1.2em;
+  margin-bottom: 0.2rem;
+}
+h4, h5, h6 {
+  font-size: 1em; /* 20px */
+  line-height: 1.5em; /* 30px */
+  margin-top: 1.5em;
+  margin-bottom: 0;
+}
+
+/* Body text */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+p.new-topic {
+  margin-top:2.8rem;
+}
+
+strong {
+  /*color: #303030;*/
+}
+
+
+/* Lists */
+ul, ol, dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding:0;
+}
+
+main ul {
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  -webkit-padding-start: 1.1rem;
+}
+
+main ol {
+  margin-left:0;
+  margin-right:0;
+  padding:0;
+  -webkit-padding-start: 0.95rem;
+}
+
+main li {
+  padding-left: 1rem;
+  margin-bottom:0.5rem;
+}
+
+
+dt {
+  font-weight: bold;
+}
+dd {
+  margin-bottom: .5rem;
+}
+
+/* Misc */
+hr {
+  position: relative;
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
+}
+
+abbr {
+  font-size: 85%;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #e5e5e5;
+}
+
+/* Code */
+code,
+pre {
+  font-family: monospace;
+  hyphens:none;
+}
+code {
+  padding: .1rem;
+  font-size: 95%;
+  background-color: #fbfbfb;
+  border-radius: 0px;
+}
+pre {
+  overflow:scroll;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  font-size: 90%;
+  line-height: 1.4;
+  /*white-space: pre;
+  white-space: pre-wrap;*/
+  word-break: break-all;
+  word-wrap: break-word;
+  background-color: #fbfbfb;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+/* Pygments via Jekyll */
+.highlight {
+  margin-bottom: 1rem;
+  border-radius: 0px;
+}
+.highlight pre {
+  margin-bottom: 0;
+}
+
+/* Gist via GitHub Pages */
+.gist .gist-file {
+  font-family: monospace !important;
+}
+.gist .markdown-body {
+  padding: 15px;
+}
+.gist pre {
+  padding: 0;
+  background-color: transparent;
+}
+.gist .gist-file .gist-data {
+  font-size: .8rem !important;
+  line-height: 1.4;
+}
+.gist code {
+  padding: 0;
+  color: inherit;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* Quotes */
+blockquote {
+  font-size: 90%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0rem 1rem;
+  margin-bottom: 1.1111rem;
+}
+blockquote h1 {
+  margin-top: 0rem;
+}
+blockquote h2 {
+  margin-top: 0rem;
+  margin-bottom:0.5rem;
+}
+blockquote h3 {
+  margin-top: 0rem;
+}
+blockquote h4 {
+  margin-top: 0rem;
+}
+blockquote h5 {
+  margin-top: 0rem;
+}
+blockquote h6 {
+  margin-top: 0rem;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+/*@media (min-width: 30em) {
+  blockquote {
+    padding-left: 1.25rem;
+    padding-right: 4.5rem;
+  }
+}*/
+
+img {
+  display: block;
+  max-width: 100%;
+  margin: 1.5rem auto 1.5rem;
+}
+
+.title-image {
+   margin:0;
+}
+
+.social-media-icon-container {
+   width:100%;
+}
+
+img.social-media-icon {
+   margin: auto;
+   width: 50%;
+}
+
+.social-media-link {
+   text-align: center;
+   margin:0;
+   margin-bottom:10vh;
+   padding-left:1vw;
+   padding-right:1vw;
+}
+
+h2.social-media-link{
+   margin:0;
+   margin-top:3vh;
+   margin-bottom:10vh;
+}
+
+
+
+/* Tables */
+table {
+  margin: 0rem auto 1rem auto;
+  border-collapse: collapse;
+  hyphens:none;
+}
+td, th {
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+/*
+ * Custom type
+ *
+ * Extend paragraphs with `.lead` for larger introductory text.
+ */
+
+.lead {
+  font-size: 1.15rem;
+  font-weight: 300;
+}
+
+
+/*
+ * Messages
+ *
+ * Show alert messages to users. You may add it to single elements like a `<p>`,
+ * or to a parent if there are multiple elements to show.
+ */
+
+.message {
+  font-family: sans-serif;
+  -moz-font-feature-settings: 'liga=1', 'ss01=0';
+  -moz-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -webkit-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -o-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -ms-font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-feature-settings: 'liga' 1, 'ss01' 1;
+  position:relative;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  color: #737373;
+  background-color: #E6E6E6;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.message a {
+  color: inherit;
+}
+
+.message p {
+  margin-bottom: 1rem;
+}
+
+.message p:last-of-type {
+  margin-bottom: 0rem;
+}
+
+.message-close {
+  color: #A5A5A5;
+  position: absolute;
+  top: 0.05rem;
+  right: 1rem;
+}
+
+.message-close-icon {
+  border-bottom: none;
+  font-size: 1.8rem;
+}
+
+
+/*
+ * Container
+ *
+ * Center the page content.
+ */
+
+.container {
+  max-width: 33.5rem;
+  padding-left:  1.75rem;
+  padding-right: 1.75rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+
+/*
+ * Masthead
+ *
+ * Super small header above the content for site name and short description.
+ */
+
+.masthead {
+  text-transform: uppercase;
+  text-align:center;
+  font-family: sans-serif;
+  /* margin-top: 1.5rem; */
+  /* border-bottom: 1px solid #666; */
+  padding-bottom: 0.2rem;
+  margin-bottom: 2rem;
+}
+.masthead-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size:1rem;
+}
+.masthead-title a {
+  border-bottom: none;
+}
+.masthead h1 {
+  font-family: sans-serif;
+}
+
+.masthead-subtitle {
+   margin:0;
+}
+
+.masthead h1, ul {
+  padding-top: 0.15rem;
+}
+
+@media (min-width: 30em) {
+  .masthead {
+    text-align: center;
+  }
+  .masthead-title {
+    /* float: left; */
+  }
+}
+
+.masthead-twitter {
+  margin-top: 0;
+  margin-bottom: 0;
+  /*height: 1rem;*/
+}
+
+/*
+ * Navigation bar
+ *
+ */
+ .nav {
+   padding-left: 0;
+   margin-bottom: 0;
+   list-style: none;
+ }
+ .nav li {
+   display: inline-block;
+ }
+ .nav li + li {
+   margin-left: 0.77rem;
+ }
+ .nav a {
+   border-bottom: none;
+   color: inherit;
+ }
+
+
+
+/*
+ * Posts and pages
+ *
+ * Each post is wrapped in `.post` and is used on default and post layouts. Each
+ * page is wrapped in `.page` and is only used on the page layout.
+ */
+
+.page,
+.post {
+  margin-bottom: 4em;
+}
+
+/* Blog post or page title */
+.page-title,
+.post-title,
+.post-title a {
+  font-family: sans-serif;
+  -moz-font-feature-settings: 'liga=1', 'ss01=0';
+  -moz-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -webkit-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -o-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -ms-font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-feature-settings: 'liga' 1, 'ss01' 1;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+}
+.page-title,
+.post-title {
+  margin-top: 0;
+  hyphens: none;
+}
+
+/* Meta data line below post title */
+.post-date {
+  display: block;
+  font-family: sans-serif;
+  -moz-font-feature-settings: 'liga=1', 'ss01=0';
+  -moz-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -webkit-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -o-font-feature-settings: 'liga' 1, 'ss01' 1;
+  -ms-font-feature-settings: 'liga' 1, 'ss01' 1;
+  font-feature-settings: 'liga' 1, 'ss01' 1;
+  margin-bottom: 2rem;
+  color: #CDCDCD;
+}
+
+/* Related posts */
+.related {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-top: 1px solid #eee;
+}
+.related-posts {
+  padding-left: 0;
+  list-style: none;
+}
+.related-posts h3 {
+  margin-top: 0;
+}
+.related-posts li small {
+  font-size: 75%;
+  color: #999;
+}
+.related-posts li a:hover {
+  color: #268bd2;
+  text-decoration: none;
+}
+.related-posts li a:hover small {
+  color: inherit;
+}
+
+
+/*
+ * Pagination
+ *
+ * Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
+ * there are no more previous or next posts to show.
+ */
+
+.pagination {
+  overflow: hidden; /* clearfix */
+  margin-left: -1rem;
+  margin-right: -1rem;
+  font-family: sans-serif;
+  color: #ccc;
+  text-align: center;
+}
+
+/* Pagination items can be `span`s or `a`s */
+.pagination-item {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #eee;
+}
+.pagination-item:first-child {
+  margin-bottom: -1px;
+}
+
+/* Only provide a hover state for linked pagination items */
+a.pagination-item:hover {
+  background-color: #f5f5f5;
+}
+
+@media (min-width: 30em) {
+  .pagination {
+    margin: 3rem 0;
+  }
+  .pagination-item {
+    float: left;
+    width: 50%;
+  }
+  .pagination-item:first-child {
+    margin-bottom: 0;
+    border-top-left-radius:    4px;
+    border-bottom-left-radius: 4px;
+  }
+  .pagination-item:last-child {
+    margin-left: -1px;
+    border-top-right-radius:    4px;
+    border-bottom-right-radius: 4px;
+  }
+}
+
+/*
+ * Blog post archival list
+ *
+ */
+ 
+.archive-date {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.archive-item {
+  margin-bottom: 1rem;
+  overflow: auto; /* clearfix */
+}
+
+@media (min-width: 30rem) {
+  .archive-date {
+    float: right;
+    margin-left: 1rem;
+  }
+  .archive-item {
+    margin-bottom: 1.25rem;
+  }
+}
+
+
+/*
+ * Index page stlying
+ *
+ */
+ #index-photo-mobile {
+   display:none;
+ }
+ 
+#index-photo-desktop {
+  display:block;
+  float:left;
+  width:11.7rem;
+  margin-top:0.25rem;
+  margin-right:1.8rem;
+  margin-bottom:0rem;
+}
+
+@media (max-width: 30rem) {
+   #index-photo-desktop {
+     display:none;
+   }
+   
+   #index-photo-mobile {
+     display:block;
+     float:none;
+     width:100%;
+     margin-top:0;
+     margin-right:0;
+     margin-bottom:1rem; 
+   }
+}
+
+/*
+ * Twitter
+ *
+ */
+.twitter-share-button {
+  margin-bottom: 2.75rem;
+}
+
+/*
+ * Disqus
+ *
+ */
+#disqus_thread {
+  margin-top: 6rem;
+}
+
+/*
+ * Text-selection color
+ *
+ */
+ ::selection {
+   background: #FDE9CA; /* WebKit/Blink Browsers */
+ }
+ ::-moz-selection {
+   background: #FDE9CA; /* Gecko Browsers */
+ }
+
+
+/*
+ * Footnotes
+ *
+ */
+sup a {
+ border-bottom: none;
+}
+
+.reversefootnote {
+  border-bottom: none;
+}
+
+.footnotes ol {
+  padding-left: 1rem;
+}
+
+
+/*
+ * Embedded YouTube Videos
+ *
+ */
+.youtube-embed {
+  width: 100%;
+  height: 16.87rem;
+}
+
+@media (max-width:520px) {
+  .youtube-embed {
+    height: 15.13rem;
+  }
+}
+
+/*
+ * Mailing list
+ *
+ */
+#mailing-list-signup {
+  margin-bottom:0.92rem;
+  font-size:92%;
+}
+
+#mailing-list-signup:before {
+    color: #993333;
+    content: '->';
+    position:absolute;
+    text-indent:-1.1rem;
+    margin-top:-0.05rem;
+}
+
+
+/*
+ * Buy me a coffee link
+ *
+ */
+#buy-me-a-coffee {
+  margin-bottom:25vh;
+  font-size:92%;
+}
+
+#buy-me-a-coffee:before {
+   color: #993333;
+   content: '->';
+   position:absolute;
+   text-indent:-1.1rem;
+   margin-top:-0.05rem;
+}
+
+/*
+ * Presentation slides
+ *
+ */
+.presentation-slide img {
+     border: solid 1px #cdcdcd;
+}
+
+
+/*
+ * Acronym
+ *
+ */
+.acronym {
+	letter-spacing: 0.03rem;
+}
+
+/*
+ * Bug
+ *
+ */
+bug {
+    display: block;
+    position: fixed;
+    bottom: -296px;
+    right: -268px;
+    transform: scale(0.35);
+    cursor: pointer;
+    white-space: nowrap;
+    user-select: none;
+    z-index: 2;
+}
