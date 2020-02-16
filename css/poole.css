@@ -858,3 +858,12 @@ bug {
     z-index: 2;
     /* filter:drop-shadow(6px 8px 4px #444); */
 }
+
+/*
+ * Embeded YouTube Video
+ *
+ */
+youtube-embed {
+   width: 100%;
+   height: 16.87rem;
+}
