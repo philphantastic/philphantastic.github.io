@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+  <body>
+
+    <div class="container content">
+      <header class="masthead" style="padding-top:2rem;">
+        <h1 class="masthead-title" style="font-size:2rem;font-weight:600;">Phil Wright</h1>
+          <h2 class="masthead-subtitle title-long" style="letter-spacing:0.08rem;">
+             YouTuber & Live Streamer
+          </h2>
+          <h2 class="masthead-subtitle title-short" style="letter-spacing:0.08rem;">
+             YouTuber &<br>Live Streamer
+          </h2>
+      </header>
+
+      <main>
+        {{ content }}
+      </main>
+    </div>
+
+  </body>
+</html>
+
+<style>
+
+.title-short{
+    display:none;
+}
+
+@media only screen 
+    and (max-device-width : 400px) 
+    and (orientation : portrait) 
+    and (-webkit-min-device-pixel-ratio : 2)
+{
+    .title-short{
+        display: inline-block;
+    }
+
+    .title-long{
+        display: none;
+    }
+}
+</style>
