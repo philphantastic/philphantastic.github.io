@@ -867,3 +867,21 @@ bug {
 .portfolio-link {
    color:#008396;
 }
+
+.resume-download-button {
+   margin-top:1rem;
+   height: 100%;
+   width: 100%;
+   background: #008396;
+   color: white;
+   padding: 0.3em 0.7em;
+   border-radius: 1em;
+   letter-spacing:0.05rem;
+   font-weight:bold;
+}
+
+.resume-download-button:hover {
+    background: #00b5d0;
+    text-decoration: none;
+    border-bottom: none;
+}
