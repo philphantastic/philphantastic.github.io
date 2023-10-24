@@ -71,9 +71,6 @@ body {
   -moz-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto; */
-  background-image: url("../background.jpg");
-  background-repeat: repeat;
-  background-size:100%;
 }
 
 html {
@@ -87,7 +84,7 @@ html {
 }*/
 
 body {
-  /*background: #fff url('../gridbg.gif');*/
+  background: #448ccb;
   text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: 'kern=1';
