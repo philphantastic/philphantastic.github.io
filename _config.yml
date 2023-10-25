@@ -2,17 +2,17 @@
 permalink:        pretty
 
 # Setup
-title:            Phil Phantastic
+title:            Peak Soccer
 tagline:          
-url:              https://www.philphantastic.com
+url:              https://www.peak.soccer
 paginate:         1
 baseurl:          /
 author:
-  name:           Phil Phantastic
-  url:            https://twitter.com/PhilPhantasticx
+  name:           Phil Wright
+  url:            
   email:          
-twitter:          PhilPhantasticx
-description:      YouTube Streamer
+twitter:          
+description:      
 markdown:         kramdown
 kramdown:
   input:          GFM
