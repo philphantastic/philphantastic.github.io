@@ -84,7 +84,7 @@ html {
 }*/
 
 body {
-  background: #448ccb;
+  background: white;
   text-rendering: optimizeLegibility;
   text-rendering: optimizeLegibility;
   -moz-font-feature-settings: 'kern=1';
@@ -692,7 +692,7 @@ a.pagination-item:hover {
  *
  */
  #index-photo-mobile {
-   display:none;
+   /* display:none;*/
  }
  
 #index-photo-desktop {
@@ -703,6 +703,25 @@ a.pagination-item:hover {
   margin-right:1.8rem;
   margin-bottom:0rem;
 }
+
+a.sign-up {
+    height: 100%;
+    width: 100%;
+    background: #448ccb;
+    color: white;
+    padding: 0.3em 0.7em;
+    border-radius: 1em;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    font-feature-settings: 'case' 1;
+    font-variant-numeric: normal;
+}
+
+a.sign-up:hover {
+  background: #9cc2e3;
+  text-decoration: none; 
+}
+
 
 @media (max-width: 30rem) {
    #index-photo-desktop {
