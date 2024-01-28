@@ -31,3 +31,9 @@ plugins:
 
 # GitHub Metadata
 github: [metadata]
+
+# WebBrick headers
+webrick:
+  headers:
+    Access-Control-Allow-Origin: "*"
+    
