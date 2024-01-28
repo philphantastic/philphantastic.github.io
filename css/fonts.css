@@ -33,17 +33,17 @@
 }
 
 @font-face {
-    font-family: 'cooper-hewitt-heavy';
+    font-family: 'cooper-hewitt';
     font-style: italic;
-    font-weight: normal;
+    font-weight: 800;
     font-stretch: normal;
     src:  url('../fonts/CooperHewitt-HeavyItalic.woff') format('woff2');
 }
 
 @font-face {
-    font-family: 'cooper-hewitt-heavy';
+    font-family: 'cooper-hewitt';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 800;
     font-stretch: normal;
     src:  url('../fonts/CooperHewitt-Heavy.woff') format('woff2');
 }
