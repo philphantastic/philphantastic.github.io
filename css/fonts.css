@@ -47,3 +47,11 @@
     font-stretch: normal;
     src:  url('../fonts/CooperHewitt-Heavy.woff') format('woff2');
 }
+
+@font-face {
+    font-family: 'cooper-hewitt';
+    font-style: normal;
+    font-weight: 500;
+    font-stretch: normal;
+    src:  url('../fonts/CooperHewitt-Medium.woff') format('woff2');
+}
