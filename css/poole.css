@@ -118,7 +118,7 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  border-bottom: 1px solid #303030;
+  /*border-bottom: 1px solid #303030;*/
 }
 a.archive-title {
   -moz-font-feature-settings: 'liga=1', 'ss01=0';
