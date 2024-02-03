@@ -3,6 +3,87 @@ layout: default
 title: Home
 ---
 
+<style>
+        body {
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .pricing-container {
+            display: flex;
+            max-width: 800px;
+            flex-wrap: wrap; /* Allow items to wrap to the next line */
+            font-size: 75%;
+        }
+
+        .pricing-panel {
+            flex: 1;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .pricing-panel h2 {
+            color: #444;
+            margin-top: 1rem;
+        }
+
+        .pricing-panel p {
+            color: #444;
+        }
+
+        .pricing-panel button {
+            background-color: #007BFF;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            background: #448ccb;
+            color: white;
+            padding: 0.6em 0.8em;
+            border-radius: 1em;
+            letter-spacing: 0.01rem;
+            text-transform: uppercase;
+            font-feature-settings: 'case' 1;
+            font-variant-numeric: normal;
+            font-weight: 800;
+            font-size: 84%;
+            margin-bottom: 1rem;
+        }
+
+        .pricing-panel button:hover {
+            background: #9cc2e3;
+            text-decoration: none; 
+         }
+
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            .pricing-panel {
+                flex: 100%; /* Full width on smaller screens */
+            }
+        }
+
+        .bulleted-list {
+            list-style: disc; /* Bullet style */
+            padding-left: 0.6rem; /* Remove default padding */
+            margin: 0; /* Remove default margin */
+        }
+
+        .bulleted-list li {
+            margin-bottom: 10px; /* Adjust spacing between list items */
+            line-height: 1.5; /* Adjust spacing between text and bullet */
+        }
+
+        li {
+
+        }
+    </style>
+
+
 <h1 style="color:#448ccb;text-align:left;font-weight:800;">Peak Soccer</h1>
 
 
@@ -23,5 +104,51 @@ title: Home
 <p>Click this button and submit info for your child. We will contact you to discuss your soccer goals and help find a class that works for you!</p>
 <p style="text-align:center;font-weight:800;"><a class="sign-up" href="https://docs.google.com/forms/d/e/1FAIpQLSfIXr4-H_abrNfbYR_kdn7LglZaM0_7j03IGP2wfrRsBwNf6w/viewform">Request a class!</a></p>
 
+
+<div class="pricing-container">
+
+    <div class="pricing-panel">
+        <h2>GROUP SESSIONS </h2>
+        <p style="font-style: italic;">Fun weekly lessons in a small group!</p>
+        <p style="margin-bottom: 0.5rem;">$150/month</p>
+        <button>Request info</button>
+         <ul class="bulleted-list">
+            <li>Minimum age:<br>1.5 years*</li>
+            <li>Learn through supportive play</li>
+            <li>1 session/week</li>
+            <li>40-min. session</li>
+         </ul>
+        
+    </div>
+
+    <div class="pricing-panel" style="background-color: #ffd70007; border-color: gold;">
+        <h2>UNLIMITED PLAN</h2>
+        <p style="font-style: italic;font-weight:600;">Our most popular offering!</p>
+        <p style="margin-bottom: 0.5rem;">$250/month</p>
+        <button>Request info</button>
+        <ul class="bulleted-list">
+            <li>Minimum age:<br>6.5 years</li>
+            <li>Tactical session & scrimmage</li>
+            <li>2 sessions/week</li>
+            <li>60-min. session, 90-min. scrimmage<br>(2 days)</li>
+         </ul>
+        
+    </div>
+
+    <div class="pricing-panel">
+        <h2>PRIVATE SESSIONS </h2>
+        <p style="font-style: italic;">Tailored one-on-one skill development!</p>
+        <p style="margin-bottom: 0.5rem;">$400/month</p>
+        <button>Request info</button>
+        <ul class="bulleted-list">
+            <li>Minimum age:<br>4 years</li>
+            <li>Tailored curriculum and coaching</li>
+            <li>1 session/week</li>
+            <li>60-min. session</li>
+         </ul>     
+    </div>
+</div>
+
+<p style="font-size:70%;margin-top:2rem;margin-left:1.3rem;">* Full parent participation is required if your child is under 2.5 years.</p>
 
 <div style="height: 6rem"></div>
