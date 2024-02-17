@@ -86,14 +86,43 @@ title: Home
         li {
 
         }
+
+        /*
+ * Index page stlying
+ *
+ */
+ #index-photo-mobile {
+   display:none;
+ }
+ 
+#index-photo-desktop {
+  display:block;
+}
+
+@media (max-width: 30rem) {
+   #index-photo-desktop {
+     display:none;
+   }
+   
+   #index-photo-mobile {
+     display:block;
+     float:none;
+     width:100%;
+     margin-top:0;
+     margin-right:0;
+     margin-bottom:1rem; 
+   }
+}
     </style>
 
 
-<h1 style="color:#448ccb;text-align:left;font-weight:800;">Peak Soccer</h1>
+<!-- <h1 style="color:#448ccb;text-align:left;font-weight:800;">Peak Soccer</h1> -->
 
-
+<p id="index-photo-desktop">
+   <img style="margin:0;" src="/uploads/index/Peak_weblanding.png" width="100%" alt="Peak Soccer" title="Peak Soccer">
+</p>
 <p id="index-photo-mobile">
-   <img style="margin:0;"  src="/uploads/index/banner.png" width="100%" alt="Phil Wright" title="Peak Soccer">
+   <img style="margin:0;"  src="/uploads/index/Peak_mobilelanding.png" width="100%" alt="Peak Soccer" title="Peak Soccer">
 </p>
 
 <h2 style="font-weight:800;font-size:85%;letter-spacing:0.08rem;text-transform:uppercase;margin-bottom:.2rem;">Who we are:</h2>
